@@ -12,7 +12,12 @@
             "selector": "source.lua",
     		"cmd": ["/Applications/love.app/Contents/MacOS/love", "${project_path:${folder}}"],
     		"file_regex": "^Error: (?:[^:]+: )?([^: ]+?):(\\d+):() ([^:]*)$"
-        }
+        },
+		{
+		    "name": "Love2D_SNT_GANG_deploy",
+            "cmd": ["zip -9 -r --exclude=.love game.love .git .; ls; /Applications/love.app/Contents/MacOS/love game.love"],
+			"selector": "source.lua.love",
+			"shell": true
+		}
     ]
-
 }
