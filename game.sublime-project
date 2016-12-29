@@ -4,5 +4,15 @@
 		{
 			"path": "."
 		}
-	]
+	],
+  "build_systems":
+    [
+        {
+            "name": "Love2D_SNT_GANG",
+            "selector": "source.lua",
+    		"cmd": ["/Applications/love.app/Contents/MacOS/love", "${project_path:${folder}}"],
+    		"file_regex": "^Error: (?:[^:]+: )?([^: ]+?):(\\d+):() ([^:]*)$"
+        }
+    ]
+
 }
