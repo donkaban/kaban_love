@@ -1,0 +1,332 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"SCR",
+				"SCR_H"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.lua",
+			"settings":
+			{
+				"buffer_size": 742,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test.lua",
+			"settings":
+			{
+				"buffer_size": 229,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					""
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"Love2D"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"ldoc: File"
+				],
+				[
+					"Packages/Lua Love/LuaLove.sublime-build",
+					"ldoc: Project"
+				]
+			],
+			[
+				"Packages/Lua Love/LuaLove.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 374.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 453.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Volumes/dev/develop/!love"
+	],
+	"file_history":
+	[
+		"/Volumes/dev/develop/!love/main.lua",
+		"/Users/kaban/Library/Application Support/Sublime Text 3/Packages/DashDoc/Default (OSX).sublime-keymap",
+		"/Users/kaban/Downloads/Эмоциональные заметки инвестора в геймдев.",
+		"/Applications/Android Studio.app/Contents/bin/idea.properties",
+		"/Volumes/dev/develop/!heap/synqera_engine/Source/render/fbuffer.cpp",
+		"/Volumes/dev/develop/!heap/zebra_bundle/nanoscript-tests/run_tests.py",
+		"/Volumes/dev/develop/!heap/zebra_bundle/zebrabuilder/zbs/logger.py",
+		"/Volumes/dev/develop/cvision_lab/apps/native_test/main.cpp",
+		"/Volumes/dev/develop/cvision_lab/lib.base/include/logo_detector_tmatch.h",
+		"/Volumes/dev/develop/cvision_lab/lib.base/sources/logo_detector_tmatch.cpp",
+		"/Volumes/dev/develop/!heap/zebra_bundle/nanoscript-tests/runtime.js",
+		"/Volumes/dev/develop/cvision_lab/lib.base/sources/logo_analyzer.cpp",
+		"/Volumes/dev/develop/cvision_lab/lib.base/include/logo_detector_surf.h",
+		"/Volumes/dev/develop/cvision_lab/lib.base/sources/logo_detector_surf.cpp",
+		"/Volumes/dev/develop/cvision_lab/lib.base/sources/matching_tools.cpp",
+		"/Volumes/dev/develop/cvision_lab/lib.base/include/matching_tools.h",
+		"/Volumes/dev/develop/cvision_lab/data/cards_analysis.cfg",
+		"/Volumes/dev/develop/omicron/modules/fx/sources/fx.cpp",
+		"/Volumes/dev/develop/omicron/modules/fx/sources/geo.cpp",
+		"/Volumes/dev/develop/omicron/modules/fx/include/fx.h",
+		"/Volumes/dev/develop/!heap/grasshopper/src/com/kaban/grasshopper/Main.java",
+		"/Volumes/dev/develop/!heap/grasshopper/jni/microGL/impl/app.cpp",
+		"/Volumes/dev/develop/!heap/synqera_engine/Include/TheEngine/platform/droid.h",
+		"/Volumes/dev/develop/!heap/synqera_engine/Source/platform/jni_droid.cpp",
+		"/Volumes/dev/develop/cvision_lab/apps/java_test/src/com/cardsmobile/Main.java",
+		"/Volumes/dev/develop/MWRender/.gitignore",
+		"/Volumes/dev/develop/MWRender/jni/thirdparty/libangelscript/Makefile",
+		"/Volumes/dev/develop/MWRender/build/android/build-thirdparty-gcc-arm.sh",
+		"/Volumes/dev/develop/MWRender/install.sh",
+		"/Volumes/dev/develop/cvision_lab/apps/java_test/.idea/workspace.xml",
+		"/Volumes/dev/develop/MWRender/jni/Android.mk",
+		"/Volumes/dev/develop/MWRender/jni/Application.mk",
+		"/Volumes/dev/develop/cvision_lab/CMakeLists.txt",
+		"/Volumes/dev/develop/MWRender/build/common/build-common.sh",
+		"/Volumes/dev/develop/cvision_lab/lib.java/jni_interface.cpp",
+		"/Volumes/dev/develop/MWRender/build/android/build-thirdparty-gcc-arm64.sh",
+		"/Volumes/dev/develop/cvision_lab/apps/old_test/main.cpp",
+		"/Applications/IntelliJ IDEA.app/Contents/bin/idea.properties",
+		"/Applications/CLion.app/Contents/bin/idea.properties"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 91.0,
+		"where_history":
+		[
+			"/Volumes/dev/develop/!heap/The"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"particle:",
+			"particle",
+			"psystem",
+			"BlurFilter"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 742,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								101,
+								101
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SublimeLove/Love.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "test.lua",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 229,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								229,
+								229
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SublimeLove/Love.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 216.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/LLL.sublime-build",
+	"project": "game.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 230.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
