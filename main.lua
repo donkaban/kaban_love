@@ -1,6 +1,4 @@
-
 require ("test") 
-
 
 local x = 100
 local y = 100
@@ -20,9 +18,6 @@ function love.load()
 	particle_tune(particle)
 end
 
-
-
-
 function love.update(dt)
 
 	x = x + dx
@@ -40,3 +35,4 @@ function love.draw()
     love.graphics.draw(image, x, y)
     love.graphics.draw(particle, SCR_W/2, SCR_H/2)
 end
+
