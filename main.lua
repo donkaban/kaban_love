@@ -1,4 +1,4 @@
-require ("test") 
+require ("src/test") 
 
 local x = 100
 local y = 100
@@ -7,7 +7,7 @@ local dy = 3
 local c  = 0
 local dc = 1;
 
-local image = love.graphics.newImage("image.png")
+local image = love.graphics.newImage("common/image.png")
 local particle = love.graphics.newParticleSystem( image, 300 )
 
 local SCR_W, SCR_H = love.graphics.getDimensions()
