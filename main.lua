@@ -1,38 +1,61 @@
-require ("src/test") 
+local config = require ('config') 
 
-local x = 100
-local y = 100
-local dx = 5
-local dy = 3
-local c  = 0
-local dc = 1;
 
-local image = love.graphics.newImage("common/image.png")
-local particle = love.graphics.newParticleSystem( image, 300 )
 
-local SCR_W, SCR_H = love.graphics.getDimensions()
-local IMG_W, IMG_H = image:getDimensions()
+-- scene
+
+scene = 
+{
+	background,
+
+}
+
+
+
+local function check(path) if(not love.filesystem.isFile(path)) then  error(path + ' file not exist') end end
+
+
+card = {}
+
+function card:load(path)
+	local obj = {}
+	obj.image = love.graphics.newImage(check(path + '/image.png'))
+	obj.thumb = love.graphics.newImage(check(path + '/thumb.png'))
+
+
+
+ 	setmetatable(obj,self)
+   	self.__index   = self
+	return obj
+
+end
+
+
 
 
 function love.load()
-	particle_tune(particle)
+	
+	love.window.setMode(1080/2, 1920/2, {} )  -- desktop test mode, remove it
+	love.window.setTitle(config.appname)
+
+	SCR_W, SCR_H = love.graphics.getDimensions()	
+
+	scene.background = love.graphics.newVideo(config.background)
+
 end
 
 function love.update(dt)
-
-	x = x + dx
-	y = y + dy 
-	c = c + dc
-
-	if(x < 0 or x > SCR_W-IMG_W) then dx = -dx end
-	if(y < 0 or y > SCR_H-IMG_H) then dy = -dy end	
-	if(c < 0 or c > 255) then dc = -dc end
-	particle:update(dt)
+	if(not scene.background:isPlaying()) then 
+		scene.background:rewind() 
+		scene.background:play() 
+	end
+	
 end
 
+
 function love.draw()
-  	love.graphics.setColor(255,c,0,255)
-    love.graphics.draw(image, x, y)
-    love.graphics.draw(particle, SCR_W/2, SCR_H/2)
+	 love.graphics.draw(scene.background, 0, 0)
+
+
 end
 
