@@ -26,22 +26,35 @@ function fragment:load(path, tag , speed)
 		obj.w, obj.h = obj.image:getDimensions()
 		
 		if(obj.tag == 'L') then
+
 			obj.dir = {x = 500, y = 0}
 			obj.x   = -obj.w
 			obj.y   = 0
-		
+
 		elseif(obj.tag == 'R') then
-		
+
+			obj.dir = {x = -500, y = 0}
+			obj.x   = 2 *obj.w
+			obj.y   = 0
+
 		elseif(obj.tag == 'T') then
-		
+
+			obj.dir = {y = -500, x = 0}
+			obj.x   = 0
+			obj.y   = 2 * obj.h
+
 		elseif(obj.tag == 'B') then
+
+			obj.dir = {y = 500, x = 0}
+			obj.x   = 0
+			obj.y   = -obj.h
 
 		else
 			error ('bad tag - '.. obj.tag)
 		end		
 			
 
-		print('   + add fragment '.. obj.path .. '['.. obj.tag ..'] speed: ' .. obj.speed)	
+		print('   + add fragment '.. obj.path .. ' ['.. obj.tag ..'] speed: ' .. obj.speed)	
 	end
 
 
@@ -59,6 +72,10 @@ end
 
 function fragment:update(dt)
 	if(not self.exist) then return end
+	if(self.x < 0) then self.x = 0 return end
+	if(self.y < 0) then self.y = 0 return end
+
+
 	self.x = self.x + self.speed * dt * self.dir.x
 	self.y = self.y + self.speed * dt * self.dir.y
 
@@ -78,10 +95,10 @@ function card:load(path)
 	obj.path = path
 	print('add card '.. obj.path)	
 		
-	obj.l = fragment:load(obj.path .. '/image_l.png', 'L') 
-	obj.r = fragment:load(obj.path .. '/image_r.png', 'R') 
-	obj.t = fragment:load(obj.path .. '/image_t.png', 'T') 
-	obj.b = fragment:load(obj.path .. '/image_b.png', 'B') 
+	obj.l = fragment:load(config.content_path .. obj.path .. '/left.png', 'L') 
+	obj.r = fragment:load(config.content_path .. obj.path .. '/right.png', 'R') 
+	obj.t = fragment:load(config.content_path .. obj.path .. '/top.png', 'T') 
+	obj.b = fragment:load(config.content_path .. obj.path .. '/bottom.png', 'B') 
 	if(love.filesystem.isFile(path..'thumb.png'))   then obj.thumb = love.graphics.newImage(check(obj.path .. '/thumb.png')) end
 
  	setmetatable(obj,self)
@@ -134,7 +151,7 @@ function love.load()
 	SCR_W, SCR_H = love.graphics.getDimensions()	
 
 	scene.background = love.graphics.newVideo(config.background)
-	scene.card = card:load('cards/corwin')
+	scene.card = card:load('cards/pockemon')
 
 end
 
